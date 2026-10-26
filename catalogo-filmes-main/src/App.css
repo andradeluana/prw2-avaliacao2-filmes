@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #FFF0D2;
+    color: #5A1715;
+}
+
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF0D2;
+}
+
+/* LONA */
+
+.tenda {
+    width: 100%;
+    text-align: center;
+}
+
+.lona {
+    width: 100%;
+    height: 180px;
+    position: relative;
+
+    background: repeating-linear-gradient(
+        90deg,
+        #D9362B 0px,
+        #D9362B 70px,
+        #FFF9ED 70px,
+        #FFF9ED 140px
+    );
+
+    border-radius: 0 0 50% 50% / 0 0 15px 15px;
+}
+
+
+.listras {
+    position: absolute;
+    inset: 0;
+
+    background: repeating-linear-gradient(
+        90deg,
+        #D9362B 0px,
+        #D9362B 70px,
+        #FFF9ED 70px,
+        #FFF9ED 140px
+    );
+}
+
+/* TITULO */
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    margin-top: 30px;
+}
+
+.titulo h1 {
+    margin: 0;
+
+    color: #7D1714;
+    background-color: #FFD15C;
+
+    font-size: 40px;
+    letter-spacing: 4px;
+
+    padding: 12px 28px;
+
+    border: 4px solid #7D1714;
+    border-radius: 5px;
+
+    box-shadow: 5px 5px 0 #B52B24;
+}
+
+.pipoca {
+    font-size: 35px;
+}
+
+/* MENU */
+
+.tenda nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.tenda nav a {
+    color: #FFF9ED;
+    background-color: #D9362B;
+
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    padding: 11px 22px;
+
+    border: 3px solid #D9362B;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.tenda nav a:hover {
+    color: #7D1714;
+    background-color: #FFD15C;
+    border-color: #7D1714;
+}
+
+/* FILMES */
+
+.filmes-container {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.filme-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #FFF9ED;
+    color: #5A1715;
+
+    padding: 22px 28px;
+    margin-bottom: 18px;
+
+    border-left: 10px solid #D9362B;
+    border-radius: 6px;
+
+    box-shadow: 0 5px 12px rgba(90, 23, 21, 0.15);
+
+    transition: 0.3s;
+}
+
+.filme-card:hover {
+    transform: translateX(5px);
+
+    border-left-color: #F2B632;
+
+    box-shadow: 0 7px 16px rgba(90, 23, 21, 0.22);
+}
+
+.filme-card strong {
+    color: #7D1714;
+}
+
+.filme-card a {
+    color: #D9362B;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filme-card a:hover {
+    color: #E8A52B;
+}

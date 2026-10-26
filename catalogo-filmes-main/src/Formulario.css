@@ -1,0 +1,167 @@
+.formulario-pagina {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.fundo-creme {
+    background-color: #FFF0D2;
+}
+
+.fundo-lona {
+    background: repeating-linear-gradient(
+        90deg,
+        #D9362B 0px,
+        #D9362B 70px,
+        #FFF9ED 70px,
+        #FFF9ED 140px
+    );
+}
+
+.formulario {
+    width: 450px;
+
+    background-color: #FFE6A3;
+
+    padding: 35px 40px;
+
+    border: 3px solid #7D1714;
+    border-radius: 6px;
+
+    box-shadow:
+        8px 8px 0 #D9362B,
+        0 10px 25px rgba(90, 23, 21, 0.18);
+
+    position: relative;
+}
+
+/* DETALHE DECORATIVO */
+
+.formulario::before {
+    content: '🍿';
+
+    position: absolute;
+    top: -22px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #FFD15C;
+
+    padding: 4px 12px;
+
+    border: 3px solid #7D1714;
+    border-radius: 50%;
+}
+
+/* TÍTULO */
+
+.formulario h2,
+.formulario h3 {
+    text-align: center;
+
+    color: #7D1714;
+
+    font-size: 28px;
+    letter-spacing: 2px;
+
+    margin: 10px 0 30px;
+}
+
+/* LABEL */
+
+.formulario label {
+    display: block;
+
+    color: #7D1714;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+/* CAMPOS */
+
+.formulario input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 11px 12px;
+
+    background-color: #FFF0D2;
+
+    color: #5A1715;
+
+    border: 2px solid #E8A52B;
+    border-radius: 4px;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+
+    margin-bottom: 18px;
+}
+
+.formulario input::placeholder {
+    color: #9B7065;
+}
+
+.formulario input:focus {
+    outline: none;
+
+    border-color: #D9362B;
+
+    box-shadow: 0 0 0 2px rgba(217, 54, 43, 0.15);
+}
+
+/* BOTÕES */
+
+.formulario .btn {
+    border: 2px solid transparent;
+
+    border-radius: 4px;
+
+    padding: 9px 20px;
+
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.formulario .btn-principal {
+    background-color: #D9362B;
+    color: #FFF9ED;
+
+    border-color: #7D1714;
+}
+
+.formulario .btn-principal:hover {
+    background-color: #B52B24;
+}
+
+.formulario .btn-cancelar {
+    background-color: #FFD15C;
+    color: #7D1714;
+
+    border-color: #E8A52B;
+}
+
+.formulario .btn-cancelar:hover {
+    background-color: #F2B632;
+}
+
+/* ÁREA DOS BOTÕES */
+
+.formulario .btn + .btn {
+    margin-left: 12px;
+}
